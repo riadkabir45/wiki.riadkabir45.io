@@ -6,7 +6,9 @@ Any display package pulls gnome which in term pulls snap which is kinda shit.
 ## Initialize the rootfs
 Debian/ubuntu can easily deployed in most linux system as debootstrap is available in most.
 The command is simply
-```debootstrap VERSION_CODE_NAME FOLDER```
+```
+debootstrap VERSION_CODE_NAME FOLDER
+```
 
 After that, make sure to enable extra repos
 ```
@@ -16,7 +18,9 @@ deb https://deb.debian.org/debian bullseye main contrib non-free
 
 ## Pre-Boot
 Packages that are needed to boot and connect properly
-```inux-image-generic firmware-linux network-manager sudo locales firmware-YOUR_BRAND TEXT_EDITOR```
+```
+inux-image-generic firmware-linux network-manager sudo locales firmware-YOUR_BRAND TEXT_EDITOR
+```
 
 Configure timezone and locales
 ```
