@@ -12,9 +12,8 @@ initrd /initrd.img
 ```
 menuentry 'Android' {
 set android=/FOLDER_NAME
-insmod all_video 
 search --set=root --file $android/kernel 
-linux $android/kernel quiet root=/dev/ram0 androidboot.selinux=permissive acpi_sleep=s3_bios,s3_mode SRC=$android
+linux $android/kernel quiet root=/dev/ram0 androidboot.selinux=permissive SRC=$android
 initrd $android/initrd.img
 }
 ```
