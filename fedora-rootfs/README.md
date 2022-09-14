@@ -14,11 +14,11 @@ releasever=VERSION
 ```
 > /etc/yum.repos.d:
 ```
-	[fedora]
-2	name=Fedora $releasever - $basearch
-4	#BD baseurl=http://mirror.xeonbd.com/remi/fedora/linux/releases/$releasever/Everything/$basearch/os/
-5	baseurl=http://archives.fedoraproject.org/pub/archive/fedora/linux/releases/$releasever/Everything/$basearch/os/
-9	gpgcheck=0
+[fedora]
+name=Fedora $releasever - $basearch
+#BD baseurl=http://mirror.xeonbd.com/remi/fedora/linux/releases/$releasever/Everything/$basearch/os/
+baseurl=http://archives.fedoraproject.org/pub/archive/fedora/linux/releases/$releasever/Everything/$basearch/os/
+gpgcheck=0
 ```
 GpgCheck is necessary as false here as host might not have fedora keyrings
 
