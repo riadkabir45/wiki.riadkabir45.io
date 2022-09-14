@@ -6,6 +6,7 @@ Any display package pulls gnome which in term pulls snap which is kinda shit.
 ## Initialize the rootfs
 Debian/ubuntu can easily deployed in most linux system as debootstrap is available in most.
 The command is simply:
+
 ```debootstrap VERSION_CODE_NAME FOLDER```
 
 After that, make sure to enable extra repos:
