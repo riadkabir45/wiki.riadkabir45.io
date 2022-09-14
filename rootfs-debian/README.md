@@ -11,8 +11,8 @@ debootstrap VERSION_CODE_NAME FOLDER
 ```
 
 After that, make sure to enable extra repos
+> /etc/apt/source.list[debian]:
 ```
-/etc/apt/source.list[debian]:
 deb https://deb.debian.org/debian bullseye main contrib non-free
 ```
 
