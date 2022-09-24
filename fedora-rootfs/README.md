@@ -5,7 +5,7 @@ Most packages are sub-devided into lot of sections
 
 
 ## Initialize the rootfs
-Debian/ubuntu can deployed in most linux system as dnf is avaialable in mosts.
+Fedora can deployed in most linux system as dnf is avaialable in mosts.
 But configuring dnf to generate a rootfs is little hussle.
 After installing dnf
 > /etc/yum.conf:
