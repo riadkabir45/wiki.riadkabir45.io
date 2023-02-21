@@ -17,7 +17,8 @@ releasever=VERSION
 [fedora]
 name=Fedora $releasever - $basearch
 #BD baseurl=http://mirror.xeonbd.com/remi/fedora/linux/releases/$releasever/Everything/$basearch/os/
-baseurl=http://archives.fedoraproject.org/pub/archive/fedora/linux/releases/$releasever/Everything/$basearch/os/
+#baseurl=http://archives.fedoraproject.org/pub/archive/fedora/linux/releases/$releasever/Everything/$basearch/os/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-$releasever&arch=$basearch
 gpgcheck=0
 ```
 GpgCheck is necessary as false here as host might not have fedora keyrings
