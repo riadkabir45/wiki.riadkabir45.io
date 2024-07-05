@@ -50,3 +50,20 @@ git add file1 file2 ...
 git commit -m "Msg"
 ```
 
+
+
+## Git branch
+
+
+
+
+
+## Git extra
+
+> Git ignore files
+
+```
+# Ignores all files in this file if it present
+.gitignore
+```
+
