@@ -15,4 +15,8 @@ theme:
   highlightjs: true
   hljs_languages:
     - bash
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
