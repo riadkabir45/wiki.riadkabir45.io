@@ -59,6 +59,7 @@ Your fish produce lots of waste, which is toxic to them in high concentrations. 
 
 When you leave a tank for about a month with a small amount of fish food in it, the nutrients released in the water help build up this bacterial ecosystem. If you touch the surface of the water and feel a slimy layer, don't be disgusted—that's the beneficial bacterial colony that will process your fish waste into less toxic substances.
 
+![Aquarium Nitrogen Cycle](images/ncycle.jpg)
 
 
 ## Fish Acclimation
