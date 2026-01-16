@@ -1,22 +1,39 @@
 site_name: riadkabir45
+
+extra_css:
+  - stylesheets/extra.css
+
 theme:
   name: material
   features:
-    - navigation.instant
+    - navigation.indexes
   palette: 
     - scheme: default
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
     - scheme: slate
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
   highlightjs: true
   hljs_languages:
     - bash
+
 markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
 
+plugins:
+  - search
+  - blog:
+      authors_profiles: true
+      post_excerpt: required
+    
