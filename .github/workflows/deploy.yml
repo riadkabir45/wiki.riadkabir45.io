@@ -18,6 +18,8 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
+      - name: Install pngquant
+        run: sudo apt-get update && sudo apt-get install -y pngquant
       - run: pip install mkdocs-material
       - run: pip install pillow cairosvg
       - run: mkdocs gh-deploy --force
