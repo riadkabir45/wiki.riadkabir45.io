@@ -9,6 +9,7 @@ categories:
 # The Perfect Blog Post: A Feature Demo
 
 Writing a blog is different from writing a Wiki. While a Wiki is for facts, a blog is for **stories**. This post will show you exactly how to use Markdown to make your stories look professional.
+
 <!-- more -->
 
 ## 1. Using Admonitions (Pro-Tips)
@@ -44,6 +45,8 @@ As an AI Developer, you will often want to show "Old Code" vs "New Code." Use **
 
 If you are writing about your **Aquarium Maintenance**, use a task list so people can follow along.
 
+
+
 - [x] Test the water pH
 - [x] Clean the canister filter
 - [ ] Feed the fish (Don't forget!)
@@ -58,11 +61,11 @@ Keep your main text simple. If you have a technical term like LLM[^1], use a foo
 
 Every good blog ends with a summary and a question.
 
-| Feature | Best For... |
-| :--- | :--- |
-| **Tabs** | Code comparisons / Before-After |
-| **Admonitions** | Pro-tips and warnings |
-| **Footnotes** | Defining technical terms |
+| Feature         | Best For...                     |
+|:--------------- |:------------------------------- |
+| **Tabs**        | Code comparisons / Before-After |
+| **Admonitions** | Pro-tips and warnings           |
+| **Footnotes**   | Defining technical terms        |
 
 ---
 

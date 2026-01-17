@@ -24,16 +24,30 @@ theme:
   hljs_languages:
     - bash
 
-markdown_extensions:
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - admonition
-  - pymdownx.details
-
 plugins:
   - search
   - blog:
-      authors_profiles: true
       post_excerpt: required
-    
+      authors_profiles: true
+      post_readtime: true
+  - tags
+  - social
+  - optimize
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - footnotes
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
