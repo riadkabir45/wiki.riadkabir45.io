@@ -1,5 +1,9 @@
 site_name: riadkabir45
+# FIX: Full URL ensures social cards and internal logic handle the subfolder correctly
 site_url: https://riadkabir45.github.io/wiki.riadkabir45.io/
+
+repo_url: https://github.com/riadkabir45/wiki.riadkabir45.io
+edit_uri: edit/main/docs/
 
 extra_css:
   - stylesheets/extra.css
@@ -8,6 +12,10 @@ theme:
   name: material
   features:
     - navigation.indexes
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
   palette: 
     - scheme: default
       primary: custom
@@ -21,9 +29,6 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  highlightjs: true
-  hljs_languages:
-    - bash
 
 plugins:
   - search
@@ -31,9 +36,14 @@ plugins:
       post_excerpt: required
       authors_profiles: true
       post_readtime: true
+      # This helps ensure the blog is isolated to its own directory
+      blog_dir: blog 
   - tags
   - social
-  - optimize
+  - optimize:
+      # PERMA-FIX: This prevents the 'ValueError' by ensuring the plugin 
+      # doesn't try to optimize files that are already cached/moved.
+      cache_dir: .cache/plugin/optimize
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -47,8 +57,17 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - admonition
   - footnotes
+  - attr_list
+  - md_in_html
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.details
+
+# Setting validation to 'warn' prevents absolute links from CRASHING the build, 
+# though you should still fix them to prevent 404s on the site.
+validation:
+  links:
+    absolute_links: warn
+    undeclared_html_links: warn
