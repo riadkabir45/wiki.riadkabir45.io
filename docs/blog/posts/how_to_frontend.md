@@ -12,6 +12,7 @@ categories:
 As a Computer Science grad, the backend feels like home: logical, linear, and predictable. But then you hit the frontend, and suddenly it’s a chaotic mess of pixels and "vibe-based" CSS. 
 
 The secret? Don't become a designer—apply **Systems Thinking** to your UI.
+<!-- more -->
 
 ## 1. The Mental Model: Trees, Not Pixels
 
